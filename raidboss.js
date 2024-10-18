@@ -37,7 +37,7 @@ Options.Triggers.push({
         en: 'Trigger when SS rank Hunt minions spawn.',
       },
       type: 'GameLog',
-      netRegex: { line: 'The minions of an extraordinarily powerful mark are on the hunt for prey' },
+      netRegex: { line: 'The minions of an extraordinarily powerful mark are on the hunt for prey...' },
       alarmText: (data, matches, output) => output.text(),
       outputStrings: {
         text: {
