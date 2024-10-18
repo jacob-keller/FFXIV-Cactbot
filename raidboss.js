@@ -9,7 +9,7 @@ Options.Triggers.push({
         en: 'Trigger when a Forlorn Maiden appears during a FATE.',
       },
       type: 'GameLog',
-      netRegex: NetRegexes.message({ line: 'The smell of death has drawn a Forlorn maiden to the battlefield' }),
+      netRegex: { line: 'The smell of death has drawn a Forlorn maiden to the battlefield' },
       alertText: (data, matches, output) => output.text(),
       outputStrings: {
         text: {
@@ -23,7 +23,7 @@ Options.Triggers.push({
         en: 'Trigger when the Forlorn appears during a FATE.',
       },
       type: 'GameLog',
-      netRegex: NetRegexes.message({ line: 'The smell of death has drawn the Forlorn to the battlefield' }),
+      netRegex: { line: 'The smell of death has drawn the Forlorn to the battlefield' },
       alarmText: (data, matches, output) => output.text(),
       outputStrings: {
         text: {
@@ -37,7 +37,7 @@ Options.Triggers.push({
         en: 'Trigger when SS rank Hunt minions spawn.',
       },
       type: 'GameLog',
-      netRegex: NetRegexes.message({ line: 'The minions of an extraordinarily powerful mark are on the hunt for prey' }),
+      netRegex: { line: 'The minions of an extraordinarily powerful mark are on the hunt for prey' },
       alarmText: (data, matches, output) => output.text(),
       outputStrings: {
         text: {
